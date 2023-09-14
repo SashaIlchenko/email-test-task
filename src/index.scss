@@ -1,0 +1,60 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+
+body,
+table,
+td,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(44, 44, 44, 1);
+    background-color: rgba(255, 255, 255, 1);
+
+    .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.header {
+    padding: 22px 40px;
+}
+
+
+.content {
+    padding: 0 40px;
+}
+
+
+.footer {
+    background-color: rgba(249, 249, 249, 1);
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+    border-radius: 12px;
+}
+
+.arrow_link {
+    color: rgba(33, 146, 239, 1);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+@media (min-width: 320px) {
+    .email-container {
+        width: 100% !important;
+    }
+}
