@@ -19,16 +19,18 @@
     /* Apply basic styles */
     body {
       font-family: Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.6;
-      background-color: #f0f0f0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(44, 44, 44, 1);
+      background-color: rgba(255, 255, 255, 1);
     }
 
     /* Container for the email content */
     .email-container {
       max-width: 600px;
       margin: 0 auto;
-      background-color: #ffffff;
+
     }
 
     /* Header */
@@ -45,10 +47,11 @@
 
     /* Footer */
     .footer {
-      background-color: #333;
-      color: #ffffff;
+      background-color: rgba(249, 249, 249, 1);
       text-align: center;
       padding: 10px;
+      max-width: 600px;
+      border-radius: 12px;
     }
 
     /* Media query for responsiveness */
@@ -62,21 +65,28 @@
 </head>
 
 <body>
-  <table class="email-container" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <table class="email-container" width="100%" cellspacing="0" cellpadding="0">
     <tr>
       <td>
-        <table class="header" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <table class="header" width="100%" cellspacing="0" cellpadding="0">
           <tr>
-            <td><img src="./images/pdfFfiller-logo.png" /></td>
-            <td><a href="#">Go to My Organization</a></td>
+            <td><img src="./images/pdfFfiller-logo.png" alt="logo image" width="126" height="36" /></td>
+            <td><a href="#">Go to My Organization
+                <!-- Inline SVG with a fallback image -->
+                <img src="./images/Arrow-right.png" alt="Fallback Image" width="16" height="16">
+                <!--[if mso]>
+                              <img src="./images/Arrow-right.svg" alt="SVG Image" width="16" height="16">
+                              <![endif]-->
+                <!-- End of Inline SVG -->
+              </a></td>
           </tr>
         </table>
-        <table class="content" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <table class="content" width="100%" cellspacing="0" cellpadding="0">
           <tr>
             <td>
               <strong>Your billing, simplified</strong>
               <p>We have an important billing update for you</p>
-              <p>we wanted to make things to easier for our customers, so we combined subscription and teammates'
+              <p>We wanted to make things to easier for our customers, so we combined subscription and teammates'
                 charges in one billing cycle</p>
               <p>As a thank you for being our loyal customer, we'll continue providing the best service to your
                 current extra teammates for free*</p>
@@ -85,46 +95,164 @@
         </table>
         <table class="content" width="100%" cellspacing="0" cellpadding="0">
           <tr>
+            <td><strong>
+                <img src="./images/Agree.png" alt="Green Ok" width="40" height="40">Before</strong>
+              <p>&#8226; You had multiply billing cycles</p>
+              <p>&#8226; You paid for your subscription and for your extra teammates separately</p>
+            </td>
+            <td><strong>
+                <img src="./images/Desagree.png" alt="Red Cross" width="40" height="40">Now</strong>
+              <p>&#8226; You have one billing cycle</p>
+              <p>&#8226; You'll only pay fot your subscription, no charge for your current extra teammates</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#">Review change in My Organization</a>
+              <br /><span>*Changing or canceling your subscription will freeze the accuonts of your extra
+                teammates.
+                To restore thier accounts, please <a href="#">contact us.</a></span>
+            </td>
+          </tr>
+        </table>
 
-            <td><strong>Before</strong>
-              <p>You had multiply billing cycles</p>
-              <p>You paid for your subscription and for your extra teammates separately</p>
-            </td>
-            <td><strong>Now</strong>
-              <p>You have one billing cycle</p>
-              <p>You'll only pay fot your subscription, no charge for your current extra teammates</p>
-            </td>
-            <table class="content" width="100%" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><a href="#">Review change in My Organization</a>
-                  <br /><span>*Changing or canceling your subscription will freeze the accuonts of your extra teammates.
-                    To restore thier accounts, please <a href="#">contact us.</a></span>
-                </td>
-              </tr>
-            </table>
-          </tr>
-        </table>
         <table class="content" width="100%" cellspacing="0" cellpadding="0">
           <tr>
             <td>
-              <img />
+              <img src="./images/Sound.png" alt="Sound image" width="60" height="60" style="display: block;" />
               <strong>If you have any questions, please contact our support team.</strong>
-              <a href="#"> Contact support</a>
+              <br /><a href="#"> Contact support</a>
             </td>
           </tr>
         </table>
         <table class="content" width="100%" cellspacing="0" cellpadding="0">
           <tr>
             <td>
-              <img src="./images/featured image.jpg" alt="Sample Image" width="100%" style="display: block;">
+              <img
+                srcset="./images/featured-image.jpg 1x, ./images/featured-image@2x.jpg 2x, ./images/featured-image@3x.jpg 3x"
+                src="./images/featured-image.jpg" alt="featured-image" width="100%"
+                style="display: block; max-width: 600px;">
               <strong>pdfFiler for Enterprise: Transform how your organization works with documents</strong>
-              <a href="#">Select a pdfFiler for Enterprise plan</a>
+              <a href="#">Select a pdfFiler for Enterprise plan
+                <!-- Inline SVG with a fallback image -->
+                <img src="./images/Arrow-right.png" alt="Fallback Image" width="16" height="16">
+                <!--[if mso]>
+                                                  <img src="./images/Arrow-right.svg" alt="SVG Image" width="16" height="16">
+                                                  <![endif]-->
+                <!-- End of Inline SVG -->
+              </a>
             </td>
           </tr>
         </table>
         <table class="footer" width="100%" cellspacing="0" cellpadding="0">
           <tr>
-            <td>&copy; 2023 AirSlate Name</td>
+            <td>
+              <p>-Best regards,<br />Sarah from the pdfFiler Team</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="content" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><a href="https://www.apple.com/ua/app-store" target="_blank"
+                      rel="noopener noreferrer nofollow"><img src="./images/Appstore.jpg" alt="Image link to AppStore"
+                        width="108" height="36" /></a></td>
+                  <td><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="./images/GooglePlay.jpg" alt="Image link to GooglePlay" width="110.7" height="36" /></a>
+                  </td>
+                  <td><a href="#"><img src="./images/Windows.jpg" alt="Image link to download for Windows" width="150.3"
+                        height="36" /></a></td>
+                  <td><a href="#"><img src="./images/Mac.jpg" alt="Image link to download for MacOS" width="120.6"
+                        height="36" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Connect pdfFiler with the toolsand services you already use</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="content" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="./images/Gmail.jpg" alt="link to Gmail" width="48" height="48" /></a>
+                  </td>
+                  <td>
+                    <a href="https://docs.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="./images/Docs.jpg" alt="link to Google Documents" width="48" height="48" /></a>
+                  </td>
+                  <td>
+                    <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="./images/Drive.jpg" alt="link to Google Drive" width="48" height="48" /></a>
+                  </td>
+                  <td>
+                    <a href="https://docs.google.com/spreadsheets/" target="_blank"
+                      rel="noopener noreferrer nofollow"><img src="./images/Sheets.jpg" alt="link to Google Sheets"
+                        width="48" height="48" /></a>
+                  </td>
+                  <td>
+                    <a href="https://docs.google.com/forms/" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="./images/Forms.jpg" alt="link to Google Forms" width="48" height="48" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="content" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><a href="#">Forgot Password?</a></td>
+                  <td><a href="#">Contact Support</a></td>
+                  <td><a href="#">Terms of Services</a></td>
+                  <td><a href="#">Privacy Policy</a></td>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table class="content" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><a href="https://www.facebook.com/" target="_blank"
+                      rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
+                      <img src="./images/Facebook.png" alt="Fallback Image" width="32" height="32">
+                      <!--[if mso]>
+                                                                    <img src="./images/Facebook.svg" alt="SVG Image" width="32" height="32">
+                                                                    <![endif]-->
+                      <!-- End of Inline SVG --></a></td>
+                  <td><a href="https://www.linkedin.com/" target="_blank"
+                      rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
+                      <img src="./images/Linkedin.png" alt="Fallback Image" width="32" height="32">
+                      <!--[if mso]>
+                                                                                    <img src="./images/Linkedin.svg" alt="SVG Image" width="32" height="32">
+                                                                                    <![endif]-->
+                      <!-- End of Inline SVG --></a></td>
+                  <td><a href="https://www.youtube.com/" target="_blank"
+                      rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
+                      <img src="./images/Youtube.png" alt="Fallback Image" width="32" height="32">
+                      <!--[if mso]>
+                                                                                    <img src="./images/Youtube.svg" alt="SVG Image" width="32" height="32">
+                                                                                    <![endif]-->
+                      <!-- End of Inline SVG --></a></td>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>2022 &copy; airSlate, Inc. All rights reserved. <br />17 Station Street, 3rd Floor, Brookline, MA
+                02445</p>
+            </td>
+          </tr>
+        </table>
+        <table class="content" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>If you no longer wish to receive emails from pdfFiler, please click <a href="#">hear</a></td>
           </tr>
         </table>
       </td>
