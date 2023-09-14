@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <!-- <link rel="stylesheet" href="./sass/index.scss" /> -->
+  <style>
+    /* Reset some default styles to ensure consistency */
+    body,
+    table,
+    td,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Apply basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+    }
+
+    /* Container for the email content */
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+    }
+
+    /* Header */
+    .header {
+      background-color: #333;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    /* Content */
+    .content {
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Media query for responsiveness */
+    @media (min-width: 320px) {
+      .email-container {
+        width: 100% !important;
+      }
+    }
+  </style>
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <table class="email-container" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td>
+        <table class="header" width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><strong>Company Name</strong></td>
+          </tr>
+        </table>
+        <table class="content" width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td>
+              <p>Hello,</p>
+              <p>This is a sample email content.</p>
+              <img src="./images/featured image.png" alt="Sample Image" width="100%" style="display: block;">
+              <a href="#">Read more</a>
+            </td>
+          </tr>
+        </table>
+        <table class="footer" width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td>&copy; 2023 Company Name</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
