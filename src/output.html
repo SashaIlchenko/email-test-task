@@ -6,24 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page title</title>
   <link rel="stylesheet" href="index.scss">
-
   <script type="module" src="index.js"></script>
-<style>
-@media (min-width: 320px) {
-  .email-container {
-    width: 100% !important;
-  }
-}
-</style></head>
+  <style>
+    @media (min-width: 320px) {
+      .email-container {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
 
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; color: #2c2c2c; background-color: white;">
-  <table class="email-container" width="100%" cellspacing="0" cellpadding="0" style="padding: 0; max-width: 600px; margin: 0 auto;">
+<body
+  style="margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; color: #2c2c2c; background-color: white;">
+  <table class="email-container" width="100%" cellspacing="0" cellpadding="0"
+    style="padding: 0; max-width: 680px; margin: 0 auto;">
     <tr>
       <td style="margin: 0; padding: 0;">
-        <table class="header" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+        <table class="header" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 22px 40px;">
           <tr>
-            <td style="margin: 0; padding: 0;"><img src="images/pdfFfiller-logo.png" alt="logo image" width="auto" height="36"></td>
-            <td style="margin: 0; padding: 0;"><a href="#">Go to My Organization
+            <td style="margin: 0; padding: 0; align-items: left;"><img src="images/pdfFfiller-logo.png" alt="logo image"
+                width="auto" height="36"></td>
+            <td style="margin: 0; padding: 0; text-align: right;"><a href="#" class="arrow_link"
+                style="color: #2192ef; font-weight: 700; text-decoration: none;">Go to My Organization
                 <!-- Inline SVG with a fallback image -->
                 <img src="images/Arrow-right.png" alt="Fallback Image" width="16" height="16">
                 <!-- [if mso]>
@@ -33,60 +37,106 @@
               </a></td>
           </tr>
         </table>
-        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0 40px;">
           <tr>
             <td style="margin: 0; padding: 0;">
-              <strong>Your billing, simplified</strong>
-              <p style="margin: 0; padding: 0;">We have an important billing update for you</p>
-              <p style="margin: 0; padding: 0;">We wanted to make things to easier for our customers, so we combined subscription and
+              <strong class="main-title" style="font-weight: 700; font-size: 32px; line-height: 1.25;">Your billing,
+                simplified</strong>
+              <p class="promo_text" style="margin: 0; padding: 6px;">We have an important billing update for you</p>
+              <p class="promo_text" style="margin: 0; padding: 6px;">We wanted to make things to easier for our
+                customers, so we combined subscription
+                and
                 teammates'
                 charges in one billing cycle</p>
-              <p style="margin: 0; padding: 0;">As a thank you for being our loyal customer, we'll continue providing the best service to
+              <p class="promo_text" style="margin: 0; padding: 6px;">As a thank you for being our loyal customer, we'll
+                continue providing the best
+                service to
                 your
                 current extra teammates for free*</p>
             </td>
           </tr>
         </table>
-        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0 40px;">
           <tr>
             <td style="margin: 0; padding: 0;">
-              <img src="images/Agree.png" alt="Green Ok" width="40" height="40">
-              <strong>Before</strong>
-              <p style="margin: 0; padding: 0;">&#8226; You had multiply billing cycles</p>
-              <p style="margin: 0; padding: 0;">&#8226; You paid for your subscription and<br> for your extra teammates<br>separately</p>
-            </td>
-            <td style="margin: 0; padding: 0;"><strong>
-                <img src="images/Desagree.png" alt="Red Cross" width="40" height="40">Now</strong>
-              <p style="margin: 0; padding: 0;">&#8226; You have one billing cycle</p>
-              <p style="margin: 0; padding: 0;">&#8226; You'll only pay fot your<br> subscription, no charge for your current extra teammates
-              </p>
+              <table width="100%" cellspacing="24" cellpadding="0"
+                style="margin: 0; padding: 0; border-spacing: 0 24px;">
+                <tr>
+                  <td class="table"
+                    style="margin: 0; border: 1px solid #e9e9e9; border-radius: 8px; width: 50%; padding: 24px;"
+                    width="50%"><img src="images/Agree.png" alt="Green Ok" width="40" height="40">
+                    <strong class="title" style="font-size: 24px; font-weight: 700; line-height: 1.3;">Before</strong>
+                    <p class="text" style="margin: 0; font-size: 14px; line-height: 1.42; padding: 6px;">&#8226; You had
+                      multiply billing cycles</p>
+                    <p class="text" style="margin: 0; font-size: 14px; line-height: 1.42; padding: 6px;">&#8226; You
+                      paid for your subscription and<br> for your extra
+                      teammates<br>separately</p>
+                  </td>
+                  <td style="margin: 0; padding: 0;"><span
+                      style="opacity: 0; display: inline-block; width: 24px;"></span></td>
+                  <td class="table"
+                    style="margin: 0; border: 1px solid #e9e9e9; border-radius: 8px; width: 50%; padding: 24px;"
+                    width="50%">
+                    <img src="images/Desagree.png" alt="Red Cross" width="40" height="40"><strong class="title"
+                      style="font-size: 24px; font-weight: 700; line-height: 1.3;">Now</strong>
+                    <p class="text" style="margin: 0; font-size: 14px; line-height: 1.42; padding: 6px;">&#8226; You
+                      have one billing cycle</p>
+                    <p class="text" style="margin: 0; font-size: 14px; line-height: 1.42; padding: 6px;">&#8226; You'll
+                      only pay fot your<br> subscription, no charge for your current extra
+                      teammates
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
           <tr>
-            <td style="margin: 0; padding: 0;">
-              <a href="#">Review change in My Organization</a>
-              <br><span>*Changing or canceling your subscription will freeze the accuonts of your extra
-                teammates.
-                To restore thier accounts, please <a href="#">contact us.</a></span>
+            <td style="margin: 0; padding: 0; text-align: center;">
+              <a href="#" class="link_button"
+                style="height: 48px; border: 2px solid #ff9000; border-radius: 4px; color: inherit; padding: 12px 40px; text-decoration: none; font-weight: 700; text-align: center; display: inline-block; width: auto;">Review
+                change in My Organization</a>
             </td>
+          </tr>
+          <tr>
+            <td style="margin: 0; padding: 0; height: 48px;" height="48"></td>
+          </tr>
+          <tr>
+            <td style="margin: 0; padding: 0;"><span style="color:rgba(107, 107, 107, 1)">*Changing or canceling your
+                subscription will freeze
+                the
+                accuonts of your extra
+                teammates.
+                To restore thier accounts, please <a href="#" style="color: rgba(33, 146, 239, 1)">contact
+                  us.</a></span></td>
           </tr>
         </table>
 
-        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+        <table class="content" width="100%" cellspacing="0" cellpadding="0"
+          style="margin: 0; padding: 0 40px; border-spacing: 0 60px; text-align: center;" align="center">
           <tr>
-            <td style="margin: 0; padding: 0;">
-              <img src="images/Sound.png" alt="Sound image" width="60" height="60" style="display: block;">
-              <strong>If you have any questions, please contact our support team.</strong>
-              <br><a href="#"> Contact support</a>
+            <td style="margin: 0; padding: 0; vertical-align: middle; text-align: center;" valign="middle">
+              <span style="display: inline-block;">
+                <img src="images/Sound.png" alt="Sound image" width="60" height="60" style="display: block;"></span>
+              <br><strong class="title" style="font-size: 24px; font-weight: 700; line-height: 1.3;">If you have any
+                questions, please contact<br> our support team.</strong>
+              <br><br><a href class="link_button"
+                style="height: 48px; border: 2px solid #ff9000; border-radius: 4px; color: inherit; padding: 12px 40px; text-decoration: none; font-weight: 700; text-align: center; display: inline-block; width: auto;">
+                Contact Support</a>
             </td>
           </tr>
         </table>
-        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0 40px;">
           <tr>
             <td style="margin: 0; padding: 0;">
-              <img srcset="images/featured-image.jpg 1x, images/featured-image@2x.jpg 2x, images/featured-image@3x.jpg 3x" src="images/featured-image.jpg" alt="featured-image" width="100%" style="display: block; max-width: 600px;">
-              <strong>pdfFiler for Enterprise: Transform how your organization works with documents</strong>
-              <a href="#">Select a pdfFiler for Enterprise plan
+              <img
+                srcset="images/featured-image.jpg 1x, images/featured-image@2x.jpg 2x, images/featured-image@3x.jpg 3x"
+                src="images/featured-image.jpg" alt="featured-image" width="100%"
+                style="display: block; max-width: 600px; border-radius: 4px;">
+              <br><strong class="title" style="font-size: 24px; font-weight: 700; line-height: 1.3;">pdfFiler for
+                Enterprise: Transform how your organization works with
+                documents</strong>
+              <br><a href="#" class="arrow_link" style="color: #2192ef; font-weight: 700; text-decoration: none;">Select
+                a pdfFiler for Enterprise plan
                 <!-- Inline SVG with a fallback image -->
                 <img src="images/Arrow-right.png" alt="Fallback Image" width="16" height="16">
                 <!--[if mso]>
@@ -96,105 +146,179 @@
               </a>
             </td>
           </tr>
+          <tr>
+            <td style="margin: 0; padding: 0; height: 60px;" height="60"></td>
+          </tr>
         </table>
-        <table class="footer" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; background-color: #f9f9f9; text-align: center; padding: 10px; max-width: 600px; border-radius: 12px;" bgcolor="#f9f9f9" align="center">
+        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0 40px;">
           <tr>
             <td style="margin: 0; padding: 0;">
-              <p style="margin: 0; padding: 0;">-Best regards,<br>Sarah from the pdfFiler Team</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="margin: 0; padding: 0;">
-              <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+              <table class="footer" width="100%" cellspacing="0" cellpadding="0"
+                style="margin: 0; padding: 0; background-color: #f9f9f9; text-align: center; max-width: 600px; border-radius: 12px;"
+                bgcolor="#f9f9f9" align="center">
                 <tr>
-                  <td style="margin: 0; padding: 0;"><a href="https://www.apple.com/ua/app-store" target="_blank" rel="noopener noreferrer nofollow"><img src="images/Appstore.jpg" alt="Image link to AppStore" width="108" height="36"></a></td>
-                  <td style="margin: 0; padding: 0;"><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer nofollow"><img src="images/GooglePlay.jpg" alt="Image link to GooglePlay" width="110.7" height="36"></a>
-                  </td>
-                  <td style="margin: 0; padding: 0;"><a href="#"><img src="images/Windows.jpg" alt="Image link to download for Windows" width="150.3" height="36"></a></td>
-                  <td style="margin: 0; padding: 0;"><a href="#"><img src="images/Mac.jpg" alt="Image link to download for MacOS" width="120.6" height="36"></a>
+                  <td style="margin: 0; padding: 0; height: 40px;" height="40"></td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0;">
+                    <p style="margin: 0; padding: 0;">-Best regards,<br>Sarah from the pdfFiler Team</p>
                   </td>
                 </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="margin: 0; padding: 0;">
-              <p style="margin: 0; padding: 0;">Connect pdfFiler with the toolsand services you already use</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="margin: 0; padding: 0;">
-              <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+                <tr>
+                  <td style="margin: 0; padding: 0; height: 32px;" height="32"></td>
+                </tr>
                 <tr>
                   <td style="margin: 0; padding: 0;">
-                    <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/Gmail.jpg" alt="link to Gmail" width="48" height="48"></a>
-                  </td>
-                  <td style="margin: 0; padding: 0;">
-                    <a href="https://docs.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/Docs.jpg" alt="link to Google Documents" width="48" height="48"></a>
-                  </td>
-                  <td style="margin: 0; padding: 0;">
-                    <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/Drive.jpg" alt="link to Google Drive" width="48" height="48"></a>
-                  </td>
-                  <td style="margin: 0; padding: 0;">
-                    <a href="https://docs.google.com/spreadsheets/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/Sheets.jpg" alt="link to Google Sheets" width="48" height="48"></a>
-                  </td>
-                  <td style="margin: 0; padding: 0;">
-                    <a href="https://docs.google.com/forms/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/Forms.jpg" alt="link to Google Forms" width="48" height="48"></a>
+                    <table width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0;">
+                      <tr>
+                        <td style="margin: 0; padding: 0;"><a href="https://www.apple.com/ua/app-store" target="_blank"
+                            rel="noopener noreferrer nofollow"><img src="images/Appstore.jpg"
+                              alt="Image link to AppStore" width="108" height="36"></a></td>
+                        <td style="margin: 0; padding: 0;"><a href="https://play.google.com/store" target="_blank"
+                            rel="noopener noreferrer nofollow"><img src="images/GooglePlay.jpg"
+                              alt="Image link to GooglePlay" width="110.7" height="36"></a>
+                        </td>
+                        <td style="margin: 0; padding: 0;"><a href="#"><img src="images/Windows.jpg"
+                              alt="Image link to download for Windows" width="150.3" height="36"></a></td>
+                        <td style="margin: 0; padding: 0;"><a href="#"><img src="images/Mac.jpg"
+                              alt="Image link to download for MacOS" width="120.6" height="36"></a>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="margin: 0; padding: 0;">
-              <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
                 <tr>
-                  <td style="margin: 0; padding: 0;"><a href="#">Forgot Password?</a></td>
-                  <td style="margin: 0; padding: 0;"><a href="#">Contact Support</a></td>
-                  <td style="margin: 0; padding: 0;"><a href="#">Terms of Services</a></td>
-                  <td style="margin: 0; padding: 0;"><a href="#">Privacy Policy</a></td>
-              </tr></table>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="margin: 0; padding: 0;">
-              <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
+                  <td style="margin: 0; padding: 0; height: 32px;" height="32"></td>
+                </tr>
                 <tr>
-                  <td style="margin: 0; padding: 0;"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
-                      <img src="images/Facebook.png" alt="Fallback Image" width="32" height="32">
-                      <!--[if mso]>
+                  <td style="margin: 0; padding: 0;">
+                    <p style="margin: 0; padding: 0;">Connect pdfFiler with the toolsand services you already use</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0; height: 16px;" height="16"></td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0; vertical-align: middle; text-align: center;" valign="middle">
+                    <table width="48%" cellspacing="0" cellpadding="0"
+                      style="margin: 0; padding: 0; display: inline-table;">
+                      <tr>
+                        <td style="margin: 0; padding: 0;">
+                          <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                              src="images/Gmail.jpg" alt="link to Gmail" width="48" height="48"
+                              style="border-radius: 8px;"></a>
+                        </td>
+                        <td style="margin: 0; padding: 0;">
+                          <a href="https://docs.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                              src="images/Docs.jpg" alt="link to Google Documents" width="48" height="48"
+                              style="border-radius: 8px;"></a>
+                        </td>
+                        <td style="margin: 0; padding: 0;">
+                          <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer nofollow"><img
+                              src="images/Drive.jpg" alt="link to Google Drive" width="48" height="48"
+                              style="border-radius: 8px;"></a>
+                        </td>
+                        <td style="margin: 0; padding: 0;">
+                          <a href="https://docs.google.com/spreadsheets/" target="_blank"
+                            rel="noopener noreferrer nofollow"><img src="images/Sheets.jpg" alt="link to Google Sheets"
+                              width="48" height="48" style="border-radius: 8px;"></a>
+                        </td>
+                        <td style="margin: 0; padding: 0;">
+                          <a href="https://docs.google.com/forms/" target="_blank"
+                            rel="noopener noreferrer nofollow"><img src="images/Forms.jpg" alt="link to Google Forms"
+                              width="48" height="48" style="border-radius: 8px;"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="margin: 0; padding: 0; height: 32px;" height="32"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0;">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0;">
+                      <tr>
+                        <td style="margin: 0; padding: 0;"><a href="#" class="footer_link"
+                            style="text-decoration: none; font-size: inherit; font-weight: inherit; color: inherit;">Forgot
+                            Password?</a></td>
+                        <td style="margin: 0; padding: 0;"><a href="#" class="footer_link"
+                            style="text-decoration: none; font-size: inherit; font-weight: inherit; color: inherit;">Contact
+                            Support</a></td>
+                        <td style="margin: 0; padding: 0;"><a href="#" class="footer_link"
+                            style="text-decoration: none; font-size: inherit; font-weight: inherit; color: inherit;">Terms
+                            of Services</a></td>
+                        <td style="margin: 0; padding: 0;"><a href="#" class="footer_link"
+                            style="text-decoration: none; font-size: inherit; font-weight: inherit; color: inherit;">Privacy
+                            Policy</a></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0; height: 32px;" height="32"></td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0; text-align: center;">
+                    <table width="21%" cellspacing="0" cellpadding="0"
+                      style="margin: 0; padding: 0; display: inline-table;">
+                      <tr>
+                        <td style="margin: 0; padding: 0;"><a href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
+                            <img src="images/Facebook.png" alt="Fallback Image" width="32" height="32">
+                            <!--[if mso]>
                                                                     <img src="./images/Facebook.svg" alt="SVG Image" width="32" height="32">
                                                                     <![endif]-->
-                      <!-- End of Inline SVG --></a></td>
-                  <td style="margin: 0; padding: 0;"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
-                      <img src="images/Linkedin.png" alt="Fallback Image" width="32" height="32">
-                      <!--[if mso]>
+                            <!-- End of Inline SVG --></a></td>
+                        <td style="margin: 0; padding: 0;"><a href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
+                            <img src="images/Linkedin.png" alt="Fallback Image" width="32" height="32">
+                            <!--[if mso]>
                                                                                     <img src="./images/Linkedin.svg" alt="SVG Image" width="32" height="32">
                                                                                     <![endif]-->
-                      <!-- End of Inline SVG --></a></td>
-                  <td style="margin: 0; padding: 0;"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
-                      <img src="images/Youtube.png" alt="Fallback Image" width="32" height="32">
-                      <!--[if mso]>
+                            <!-- End of Inline SVG --></a></td>
+                        <td style="margin: 0; padding: 0;"><a href="https://www.youtube.com/" target="_blank"
+                            rel="noopener noreferrer nofollow"><!-- Inline SVG with a fallback image -->
+                            <img src="images/Youtube.png" alt="Fallback Image" width="32" height="32">
+                            <!--[if mso]>
                                                                                     <img src="./images/Youtube.svg" alt="SVG Image" width="32" height="32">
                                                                                     <![endif]-->
-                      <!-- End of Inline SVG --></a></td>
-              </tr></table>
-            </td>
-          </tr>
-          <tr>
-            <td style="margin: 0; padding: 0;">
-              <p style="margin: 0; padding: 0;">2022 &copy; airSlate, Inc. All rights reserved. <br>17 Station Street, 3rd Floor,
-                Brookline, MA
-                02445</p>
+                            <!-- End of Inline SVG --></a></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0; height: 32px;" height="32"></td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0;">
+                    <p class="sub_text"
+                      style="margin: 0; padding: 0; font-size: 12px; line-height: 1.3; color: #6b6b6b;">2022 &copy;
+                      airSlate, Inc. All rights reserved. <br>17 Station Street, 3rd
+                      Floor,
+                      Brookline, MA
+                      02445</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="margin: 0; padding: 0; height: 40px;" height="40"></td>
+                </tr>
+              </table>
+              <table width="100%" cellspacing="16" cellpadding="0" style="margin: 0; padding: 0; text-align: center;">
+                <tr>
+                  <td style="margin: 0; padding: 0;">
+                    <p class="sub_text"
+                      style="margin: 0; padding: 0; font-size: 12px; line-height: 1.3; color: #6b6b6b;">If you no longer
+                      wish to receive emails from pdfFiler, please click <a href="#" style="color: inherit;">hear</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
-        <table class="content" width="100%" cellspacing="0" cellpadding="0" style="margin: 0; padding: 20px;">
-          <tr>
-            <td style="margin: 0; padding: 0;">If you no longer wish to receive emails from pdfFiler, please click <a href="#">hear</a></td>
-          </tr>
-        </table>
+
       </td>
     </tr>
   </table>
