@@ -7,10 +7,10 @@ This template has a responsive design from 320px to 600px.
  This template was tested on different systems (mobile/PC, Android/iOS/macOS). Also it was tested on `putsmail.com`. 
 
 Commands:
-For develops server: npm start
-for compile (only fron src derictory): node index.js
-for build: npm build 
+For dev server: npm start;
+For compile (only from src derictory): node index.js;
+For build: npm build ;
 
 
-[https://github.com/SashaIlchenko/email-test-task] Repo on GitHub
-[https://sashailchenko.github.io/email-test-task/] Deployed page on GitHub 
+[https://github.com/SashaIlchenko/email-test-task] Repo on GitHub;
+[https://sashailchenko.github.io/email-test-task/] Deployed page on GitHub ;
